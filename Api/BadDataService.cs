@@ -6,4 +6,9 @@ public sealed class BadDataService : IDataService
     {
         return Task.FromResult(true);
     }
+
+    public Task<bool> IsCacheableAsync()
+    {
+        return Task.FromResult(false);
+    }
 }
